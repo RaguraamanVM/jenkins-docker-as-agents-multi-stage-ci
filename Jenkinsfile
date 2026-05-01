@@ -5,7 +5,7 @@ pipeline{
     stage('Checkout'){
       agent any
       steps{
-        git 'https://github.com/RaguraamanVM/jenkins-docker-as-agents-multi-stage-ci.git'
+        git branch: 'main', url: 'https://github.com/RaguraamanVM/jenkins-docker-as-agents-multi-stage-ci.git'
       }
     }
   
